@@ -1,23 +1,23 @@
 [
     {
-    "name": "dev",
-    "type": "mysql",
-    "host": "localhost",
-    "port": 3306,
-    "username": "root",
-    "password": "Schwabs2022!!",
-    "database": "ruttgersmarina",
-    "entities": ["dist/**/entities/*{.ts,.js}"],
-    "synchronize": true,
-    "migrations": ["dist/migrations/*{.ts,.js}"],
-    "cli": {
-    "migrationsDir": "src/migrations"
-    }
+        "name": "dev",
+        "type": "mysql",
+        "host": "localhost",
+        "port": 3306,
+        "username": "root",
+        "password": "",
+        "database": "ruttgersmarina",
+        "entities": ["dist/**/entities/*{.ts,.js}"],
+        "synchronize": true,
+        "migrations": ["dist/migrations/*{.ts,.js}"],
+        "cli": {
+            "migrationsDir": "src/migrations"
+        }
     },
     {
         "name": "prod",
         "type": "mysql",
-        "host": "localhost",
+        "host": "mysqldb",
         "port": 3306,
         "username": "root",
         "password": "pass123",
@@ -26,7 +26,7 @@
         "synchronize": true,
         "migrations": ["dist/migrations/*{.ts,.js}"],
         "cli": {
-        "migrationsDir": "src/migrations"
+            "migrationsDir": "src/migrations"
         }
     }
 ]
